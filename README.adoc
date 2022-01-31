@@ -67,7 +67,7 @@ toc::[]
 
 == Top 10 loans vs. top 10% loans in the loan table from the bank database
 
-=== Step by step walk through of the `top 10% loans` query
+
 
 `*_Answer: Top 10 loans_*`
 
@@ -75,14 +75,15 @@ toc::[]
 SELECT 
     loan_id,
     account_id,
-    FORMAT(amount, 2, 'de_DE') AS loan_amount
+    FORMAT(amount, 2, 'de_DE') AS loan_amount,
+    `status`
 FROM
     loan
 ORDER BY amount DESC
 LIMIT 10;
 ```
 
-image::https://user-images.githubusercontent.com/63274055/151858182-11172543-9745-4d89-bf16-0785d88bef76.png[width=600]
+image::https://user-images.githubusercontent.com/63274055/151869197-414dd150-09f7-4aba-b03f-adc3d1b365f8.png[width=600]
 
 ```
 The output of this query is 683 row(s) returned
@@ -126,10 +127,13 @@ image::https://user-images.githubusercontent.com/63274055/151862160-8d272b5d-0ef
 Output of this query is 68 row(s) returned
 ```
 
+=== Step by step walk through of the `top 10% loans` query
+
 
 ====
 ''''
 ====
+
 
 
 {rel-cont}[Related content: Lab Database Normalization]
