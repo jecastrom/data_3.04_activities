@@ -113,7 +113,7 @@ image::https://user-images.githubusercontent.com/63274055/151814765-0af1604c-ff8
 ====
 _Here I needed to output the top 10% of loans. For this I have recycled the previous query that outputs a list of loans ordered by `amount` in descending order. The total number of records in the `loan` table is `683 rows`. Then using the `RAND()` function I could select the 10% of records that are already ordered by amount. So I used the previous query as a subquery acting as my table at the FROM clause. The output was `80 rows` returned all ordered by amount descendent._
 
-
+TIP: _RAND() returns a random floating point number between 0 and 1, making it easy to select a certain percentage of all records returned from a query. For example, if you want to select approximately 5% of all records, use WHERE RAND() < 0.05. For approximately 25% of records use WHERE RAND() < 0.25, and so on._
 ====
 
 ====
