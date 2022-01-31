@@ -67,6 +67,8 @@ toc::[]
 
 == Top 10 loans vs. top 10% loans in the loan table from the bank database
 
+=== Step by step walk through of the `top 10% loans` query
+
 `*_Answer: Top 10 loans_*`
 
 ```sql
