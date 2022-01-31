@@ -186,6 +186,11 @@ FROM
 ```
 
 image::https://user-images.githubusercontent.com/63274055/151879569-13d6a966-5d6b-4979-8d64-6a8d4f3d9338.png[width=600]
+
+Finally I layout the main query as follows:
+
+image::https://user-images.githubusercontent.com/63274055/151888445-4bb9336a-0860-4118-8484-f463b8051b75.png[width=800]
+
 ====
 ''''
 ====
