@@ -82,9 +82,9 @@ toc::[]
 
 //bla bla blafootnote:[{fn-xxx}]
 
-xref:XXX-Activity-99-to-99-|-9.99[Top Section]
+xref:3-04-Activity[Top Section]
 
-xref:Last-section[Bottom section]
+
 
 
 ////
