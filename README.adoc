@@ -80,7 +80,7 @@ ORDER BY amount DESC
 LIMIT 10;
 ```
 
-image::https://user-images.githubusercontent.com/63274055/151855494-b13e760e-a7e9-4606-bda8-f7f17f838181.png[width=600]
+image::https://user-images.githubusercontent.com/63274055/151858182-11172543-9745-4d89-bf16-0785d88bef76.png[width=600]
 
 ====
 ''''
