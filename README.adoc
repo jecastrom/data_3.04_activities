@@ -85,6 +85,9 @@ LIMIT
 
 image::https://user-images.githubusercontent.com/63274055/151793062-8426ccd8-842c-4713-9eae-aecc5bbd45f3.png[width=600]
 
+====
+''''
+====
 
 `*_Answer: Top 10% loans_*`
 
