@@ -151,7 +151,7 @@ Output of this query is 68 row(s) returned
 ```
 
 
-=== Step by step walk through of the `top 10% loans` query
+=== Step by step walk through to the `top 10% loans` query
 
 
 
