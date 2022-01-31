@@ -153,7 +153,7 @@ Output of this query is 68 row(s) returned
 
 === Step by step walk through to the `top 10% loans` query
 
-The first step here is to have a full list of the records on the `loan` table, ordered by `amount` _`descendent`_
+The first step here is to have a full list of the records of the `loan` table, ordered by `amount` _`descendent`_
 
 
 ====
