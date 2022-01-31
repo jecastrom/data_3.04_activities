@@ -90,6 +90,27 @@ The output of this query is 683 row(s) returned, then limit to 10
 
 ```
 
+
+Another way to do this is using the `ROW_NUMBER` function:
+
+```sql
+SELECT
+    loan_id,
+    account_id,
+    format(amount, 2, 'de_DE') AS loan_amount,
+    `status`,
+    row_number() over (
+        ORDER BY
+            amount DESC
+    ) AS `row`
+FROM
+    loan
+LIMIT
+    10;
+```
+
+image::https://user-images.githubusercontent.com/63274055/151870326-4f8a4c69-876a-4a11-a3cf-1685b67e24f7.png[width=600]
+
 ====
 ''''
 ====
@@ -127,7 +148,9 @@ image::https://user-images.githubusercontent.com/63274055/151862160-8d272b5d-0ef
 Output of this query is 68 row(s) returned
 ```
 
+
 === Step by step walk through of the `top 10% loans` query
+
 
 
 ====

@@ -2,6 +2,7 @@ SELECT
     loan_id,
     account_id,
     format(amount, 2, 'de_DE') AS loan_amount,
+    `status`,
     row_number() over (
         ORDER BY
             amount DESC
