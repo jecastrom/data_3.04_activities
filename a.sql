@@ -19,4 +19,6 @@ WHERE
             count(*) * (0.1)
         FROM
             loan
-    );
+    )
+LIMIT
+    5;
