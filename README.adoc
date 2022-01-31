@@ -84,6 +84,11 @@ LIMIT 10;
 
 image::https://user-images.githubusercontent.com/63274055/151858182-11172543-9745-4d89-bf16-0785d88bef76.png[width=600]
 
+```
+The output of this query is 683 row(s) returned
+
+```
+
 ====
 ''''
 ====
