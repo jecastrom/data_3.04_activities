@@ -89,7 +89,9 @@ image::https://user-images.githubusercontent.com/63274055/151869197-414dd150-09f
 The output of this query is 683 row(s) returned, then limit to 10
 
 ```
-
+====
+''''
+====
 
 Another way to do this is using the `ROW_NUMBER` function:
 
