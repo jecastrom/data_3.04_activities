@@ -89,10 +89,25 @@ image::https://user-images.githubusercontent.com/63274055/151793062-8426ccd8-842
 `*_Answer: Top 10% loans_*`
 
 ```sql
-
+SELECT
+    *
+FROM
+    (
+        SELECT
+            loan_id,
+            account_id,
+            format(amount, 2, 'de_DE') AS loan_amount,
+            `status`
+        FROM
+            loan
+        ORDER BY
+            3 DESC
+    ) t
+WHERE
+    rand() < 0.1;
 ```
 
-image::path[width=600]
+image::https://user-images.githubusercontent.com/63274055/151814765-0af1604c-ff8c-400b-b737-978004fdeedb.png[width=600]
 
 
 
