@@ -115,6 +115,9 @@ WHERE
 
 image::https://user-images.githubusercontent.com/63274055/151862160-8d272b5d-0efe-449e-adae-2985d4697149.png[width=600]
 
+```
+Output of this query is 68 row(s) returned
+```
 
 
 ====
