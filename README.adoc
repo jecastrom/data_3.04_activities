@@ -155,6 +155,27 @@ Output of this query is 68 row(s) returned
 
 The first step here is to have a full list of the records of the `loan` table, ordered by `amount` _`descendent`_
 
+Then I need to find a way to fetch the first or top 10% rows of a total count of 683 rows, which is 68.3. Better said, I need to fetch the first 68.3 rows of the list.
+
+The best way I found to accomplish this is with the ROW_NUMBER function because it allocates an unique number to every record ordered by the way I need, which is by `amount` _`descendent`_. No matter what the amount is, every rows has an unique number which will go from 1 to 683. 
+
+So I am going to recycle the alternative query I did for the previous question:
+
+```sql
+SELECT
+    loan_id,
+    account_id,
+    format(amount, 2, 'de_DE') AS loan_amount,
+    `status`,
+    row_number() over (
+        ORDER BY
+            amount DESC
+    ) AS `row`
+FROM
+    loan;
+```
+
+image::https://user-images.githubusercontent.com/63274055/151876086-afde4281-9b67-4f6a-9690-068f56416d5f.png[width=800]
 
 ====
 ''''
