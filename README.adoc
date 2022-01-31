@@ -163,10 +163,7 @@ So I am going to recycle the alternative query I did for the previous question:
 
 ```sql
 SELECT
-    loan_id,
-    account_id,
-    format(amount, 2, 'de_DE') AS loan_amount,
-    `status`,
+    *,
     row_number() over (
         ORDER BY
             amount DESC
@@ -175,7 +172,7 @@ FROM
     loan;
 ```
 
-image::https://user-images.githubusercontent.com/63274055/151876086-afde4281-9b67-4f6a-9690-068f56416d5f.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/151877851-8921784a-b171-4894-ae92-52fa165280c8.png[width=800]
 
 ====
 ''''
