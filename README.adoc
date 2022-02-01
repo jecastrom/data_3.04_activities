@@ -218,6 +218,10 @@ WHERE
 
 image::https://user-images.githubusercontent.com/63274055/151888950-4d69280e-5770-4899-895e-739834f9e155.png[width=500]
 
+====
+''''
+====
+
 `Different approach to output the top 10% loans`
 
 This is similar to what the `ROW_NUMBER()` function does using session variables. Here we are adding a sequential integer to each row to the output.
