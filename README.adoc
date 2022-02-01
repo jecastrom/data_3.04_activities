@@ -218,8 +218,25 @@ WHERE
 
 image::https://user-images.githubusercontent.com/63274055/151888950-4d69280e-5770-4899-895e-739834f9e155.png[width=600]
 
+`Different approach to output the top 10% loans`
 
+This is similar to what the `ROW_NUMBER()` function does using session variables. Here we are adding a sequential integer to each row to the output.
 
+```sql
+SELECT 
+    *
+FROM
+    (SELECT 
+        t1.*, @seq:=@seq + 1 seq
+    FROM
+        (SELECT @seq:=0) initvar, loan AS t1
+    ORDER BY amount DESC) AS t2
+WHERE
+    seq <= (0.10 * @seq)
+ORDER BY amount DESC;
+```
+
+image::https://user-images.githubusercontent.com/63274055/151899977-7f56af0f-104e-4bbf-80ff-6da289e1548d.png[width=800]
 ====
 ''''
 ====
