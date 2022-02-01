@@ -195,7 +195,8 @@ image::https://user-images.githubusercontent.com/63274055/151888445-4bb9336a-086
 SELECT
     loan_id,
     account_id,
-    format(amount, 2, 'de_DE') AS loan_amount
+    format(amount, 2, 'de_DE') AS loan_amount,
+    `status`
 FROM
     (
         SELECT
